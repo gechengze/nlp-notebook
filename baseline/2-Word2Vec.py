@@ -5,13 +5,13 @@ import torch.optim as optim
 import matplotlib.pyplot as plt
 
 
-def random_batch():
+def random_batch(batch_size, vocab_size):
     random_inputs = []
     random_labels = []
     random_index = np.random.choice(range(len(skip_grams)), batch_size, replace=False)
 
     for i in random_index:
-        random_inputs.append(np.eye(voc_size)[skip_grams[i][0]])  # target
+        random_inputs.append(np.eye(vocab_size)[skip_grams[i][0]].tolist())  # target
         random_labels.append(skip_grams[i][1])  # context word
 
     return random_inputs, random_labels
@@ -19,11 +19,11 @@ def random_batch():
 
 # Model
 class Word2Vec(nn.Module):
-    def __init__(self):
+    def __init__(self, vocab_size, embed_size):
         super().__init__()
         # W and WT is not Traspose relationship
-        self.W = nn.Linear(voc_size, embedding_size, bias=False)  # voc_size > embedding_size Weight
-        self.WT = nn.Linear(embedding_size, voc_size, bias=False)  # embedding_size > voc_size Weight
+        self.W = nn.Linear(vocab_size, embed_size, bias=False)  # voc_size > embedding_size Weight
+        self.WT = nn.Linear(embed_size, vocab_size, bias=False)  # embedding_size > voc_size Weight
 
     def forward(self, X):
         # X : [batch_size, voc_size]
@@ -33,34 +33,29 @@ class Word2Vec(nn.Module):
 
 
 if __name__ == '__main__':
-    batch_size = 2  # mini-batch size
-    embedding_size = 2  # embedding size
-
     sentences = ["apple banana fruit", "banana orange fruit", "orange banana fruit",
                  "dog cat animal", "cat monkey animal", "monkey dog animal"]
 
     word_sequence = " ".join(sentences).split()
-    word_list = " ".join(sentences).split()
-    word_list = list(set(word_list))
-    word_dict = {w: i for i, w in enumerate(word_list)}
-    voc_size = len(word_list)
+    token_list = list(set(" ".join(sentences).split()))
+    token2idx = {token: idx for idx, token in enumerate(token_list)}
 
     # Make skip gram of one size window
     skip_grams = []
     for i in range(1, len(word_sequence) - 1):
-        target = word_dict[word_sequence[i]]
-        context = [word_dict[word_sequence[i - 1]], word_dict[word_sequence[i + 1]]]
+        target = token2idx[word_sequence[i]]
+        context = [token2idx[word_sequence[i - 1]], token2idx[word_sequence[i + 1]]]
         for w in context:
             skip_grams.append([target, w])
 
-    model = Word2Vec()
+    model = Word2Vec(vocab_size=len(token2idx), embed_size=2)
 
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.Adam(model.parameters(), lr=0.001)
 
     # Training
     for epoch in range(5000):
-        input_batch, target_batch = random_batch()
+        input_batch, target_batch = random_batch(batch_size=2, vocab_size=len(token2idx))
         input_batch = torch.Tensor(input_batch)
         target_batch = torch.LongTensor(target_batch)
 
@@ -75,7 +70,7 @@ if __name__ == '__main__':
         loss.backward()
         optimizer.step()
 
-    for i, label in enumerate(word_list):
+    for i, label in enumerate(token_list):
         W, WT = model.parameters()
         x, y = W[0][i].item(), W[1][i].item()
         plt.scatter(x, y)
