@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -17,9 +11,6 @@ import numpy as np
 from tqdm.notebook import tqdm
 
 
-# In[2]:
-
-
 # 构造数据集
 class MyDataset(Dataset):
     def __init__(self, debug=False):
@@ -30,27 +21,28 @@ class MyDataset(Dataset):
         else:
             df = df.sample(50000).reset_index(drop=True)
         # 读取常用停用词
-        stopwords = [line.strip() for line in open('../../stopwords/cn_stopwords.txt', 'r', encoding='utf-8').readlines()]
+        stopwords = [line.strip() for line in
+                     open('../../stopwords/cn_stopwords.txt', 'r', encoding='utf-8').readlines()]
         sentences = []
-        for title in df['title']:   
+        for title in df['title']:
             # 去除标点符号
             title = re.sub(r'[^\u4e00-\u9fa5]', '', title)
             # jieba分词
-            sentence_seged = jieba.cut(title.strip())    
+            sentence_seged = jieba.cut(title.strip())
             outstr = ''
             for word in sentence_seged:
                 if word != '\t' and word not in stopwords:
                     outstr += word
                     outstr += ' '
             if outstr != '':
-                sentences.append(outstr)    
-        # 获取所有词（token）
+                sentences.append(outstr)
+                # 获取所有词（token）
         token_list = list(set(' '.join(sentences).split()))
         # token和index互转字典
         self.token2idx = {token: i for i, token in enumerate(token_list)}
         self.idx2token = {i: token for i, token in enumerate(token_list)}
-        
-        vocab_size = len(self.token2idx)
+
+        self.vocab_size = len(self.token2idx)
         # 构造输入和输出，跳元模型，用当前字预测前一个字和后一个字
         self.inputs = []
         self.labels = []
@@ -66,11 +58,7 @@ class MyDataset(Dataset):
         return len(self.labels)
 
     def __getitem__(self, idx):
-        # 返回一个x和一个y
         return torch.LongTensor(self.inputs[idx]), torch.LongTensor(self.labels[idx])
-
-
-# In[3]:
 
 
 class Word2Vec(nn.Module):
@@ -87,25 +75,15 @@ class Word2Vec(nn.Module):
         return output_layer
 
 
-# In[4]:
-
-
 # 构造数据集
 dataset = MyDataset(debug=True)
 # 构造dataloader，batch size设置为128
-dataloader = DataLoader(dataset=dataset, batch_size=256, shuffle=True)
+dataloader = DataLoader(dataset=dataset, batch_size=128, shuffle=True)
 
 # 初始化模型
 model = Word2Vec(vocab_size=len(dataset.token2idx), embed_size=512)
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
-
-# 查看模型
-model
-
-
-# In[5]:
-
 
 # 训练20个epoch
 for epoch in range(20):
@@ -118,21 +96,5 @@ for epoch in range(20):
     print('epoch:', epoch + 1, 'loss =', '{:.6f}'.format(loss))
 
 
-# In[6]:
-
-
 W, WT = model.parameters()
-
-
-# In[7]:
-
-
-# W对应vocab中每个词的vector，这里是512维
-W.shape, WT.shape
-
-
-# In[ ]:
-
-
-
-
+print(W.shape, WT.shape)
