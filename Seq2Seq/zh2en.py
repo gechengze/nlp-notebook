@@ -12,6 +12,8 @@ import torch.optim as optim
 from torch.nn.utils.rnn import pad_sequence
 from torch.utils.data import DataLoader
 
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
 
 df = pd.read_csv('cmn.txt', sep='\t', header=None, names=['en', 'zh'])
 my_vocab = {}
@@ -42,7 +44,7 @@ def data_process(df):
 
 train_data = data_process(df)
 
-BATCH_SIZE = 8
+BATCH_SIZE = 256
 PAD_IDX = my_vocab['zh']['<pad>']
 BOS_IDX = my_vocab['zh']['<bos>']
 EOS_IDX = my_vocab['zh']['<eos>']
@@ -100,7 +102,7 @@ class Seq2Seq(nn.Module):
     def forward(self, src, tgt):
         enc_output, hidden = self.encoder(src)
         max_len, batch_size = tgt.shape[0], tgt.shape[1]
-        output = torch.zeros(max_len, batch_size, self.decoder.vocab_size)
+        output = torch.zeros(max_len, batch_size, self.decoder.vocab_size).to(device)
         y = tgt[0, :]
         for t in range(1, max_len):
             y.unsqueeze_(0)
@@ -113,8 +115,7 @@ class Seq2Seq(nn.Module):
 
 enc = Encoder(vocab_size=len(my_vocab['zh']), embed_size=64, hidden_size=64)
 dec = Decoder(vocab_size=len(my_vocab['en']), embed_size=64, hidden_size=64)
-
-model = Seq2Seq(enc, dec)
+model = Seq2Seq(enc, dec, device).to(device)
 
 
 def init_weights(m: nn.Module):
@@ -126,8 +127,8 @@ def init_weights(m: nn.Module):
 
 
 model.apply(init_weights)
-
 optimizer = optim.Adam(model.parameters())
+criterion = nn.CrossEntropyLoss(ignore_index=PAD_IDX).to(device)
 
 
 def count_parameters(model: nn.Module):
@@ -136,11 +137,12 @@ def count_parameters(model: nn.Module):
 
 print(f'The model has {count_parameters(model):,} trainable parameters')
 
-criterion = nn.CrossEntropyLoss(ignore_index=PAD_IDX)
-
-for epoch in range(10):
+model.train()
+for epoch in range(100):
     epoch_loss = 0
     for src, tgt in train_iter:
+        src = src.to(device)
+        tgt = tgt.to(device)
         optimizer.zero_grad()
         output = model(src, tgt)
         output = output[1:].view(-1, output.shape[-1])
@@ -152,3 +154,27 @@ for epoch in range(10):
         epoch_loss += loss.item()
     print('epoch:', epoch + 1, ', loss:', epoch_loss / len(train_iter))
 
+model.eval()
+
+
+def translate(zh, max_len=10):
+    zh_idx = [my_vocab['zh']['<bos>']] + my_vocab['zh'].lookup_indices(list(zh)) + [my_vocab['zh']['<eos>']]
+    zh_idx = torch.tensor(zh_idx, dtype=torch.long, device=device).unsqueeze_(1)
+    en_bos = my_vocab['en']['<bos>']
+    enc_output, hidden = model.encoder(zh_idx)
+    preds = []
+    y = torch.tensor([en_bos], dtype=torch.long, device=device)
+    for t in range(max_len):
+        y.unsqueeze_(1)
+        y, hidden = model.decoder(y, hidden)
+        y.squeeze_(1)
+        y = y.max(1)[1]
+        if y.item() == my_vocab['en']['<eos>']:
+            break
+        preds.append(my_vocab['en'].get_itos()[y.item()])
+    return ' '.join(preds)
+
+
+print(translate('我是一个学生'))
+for zh in df['zh'][0: 100]:
+    print(zh, '   ==>   ', translate(zh, max_len=10))
