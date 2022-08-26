@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07820acb-d169-4483-a5bf-fd0fd013ff62" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Seq2Seq/zh2en.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Seq2Seq/zh2en.ipynb" afterDir="false" />
-    </list>
+    <list default="true" id="07820acb-d169-4483-a5bf-fd0fd013ff62" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -196,7 +194,7 @@
       <workItem from="1661009433446" duration="2000" />
       <workItem from="1661131867995" duration="2661000" />
       <workItem from="1661150131765" duration="5542000" />
-      <workItem from="1661305936208" duration="22272000" />
+      <workItem from="1661305936208" duration="22317000" />
     </task>
     <servers />
   </component>
