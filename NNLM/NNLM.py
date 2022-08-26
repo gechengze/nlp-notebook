@@ -48,7 +48,6 @@ class MyDataset(Dataset):
 
 
 file_path = '../data/THUCNews/train.csv'
-debug = True
 tokenizer = torchtext.data.utils.get_tokenizer('spacy', language='zh_core_web_sm')
 stopwords = [line.strip() for line in open('../stopwords/cn_stopwords.txt', 'r', encoding='utf-8').readlines()]
 dataset = MyDataset(file_path, tokenizer, stopwords)
