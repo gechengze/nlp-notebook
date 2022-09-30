@@ -2,5 +2,6 @@
 tasks/*/.ipynb_checkpoints
 models/*/.ipynb_checkpoints
 models/stanford-glove
+models/.vector_cache
 .DS_Store
 .idea
