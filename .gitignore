@@ -1,3 +1,6 @@
 */.ipynb_checkpoints
+tasks/*/.ipynb_checkpoints
+models/*/.ipynb_checkpoints
+models/stanford-glove
 .DS_Store
 .idea
