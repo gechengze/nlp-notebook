@@ -5,3 +5,5 @@ models/stanford-glove
 models/.vector_cache
 .DS_Store
 .idea
+*/*.pt
+*/*/*.pt
