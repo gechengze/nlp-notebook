@@ -1,0 +1,567 @@
+2023-03-10 14:45:54,615 INFO    StreamThr :38282 [internal.py:wandb_internal():87] W&B internal server running at pid: 38282, started at: 2023-03-10 14:45:54.615198
+2023-03-10 14:45:54,616 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status
+2023-03-10 14:45:54,623 INFO    WriterThread:38282 [datastore.py:open_for_write():85] open: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/run-ii1l2h1d.wandb
+2023-03-10 14:45:54,624 DEBUG   SenderThread:38282 [sender.py:send():336] send: header
+2023-03-10 14:45:54,703 DEBUG   SenderThread:38282 [sender.py:send():336] send: run
+2023-03-10 14:45:55,462 INFO    SenderThread:38282 [dir_watcher.py:__init__():219] watching files in: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files
+2023-03-10 14:45:55,462 INFO    SenderThread:38282 [sender.py:_start_run_threads():1078] run started: ii1l2h1d with start time 1678430754.614164
+2023-03-10 14:45:55,462 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:45:55,462 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:45:55,464 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: check_version
+2023-03-10 14:45:55,465 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: check_version
+2023-03-10 14:45:56,049 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: run_start
+2023-03-10 14:45:56,050 DEBUG   HandlerThread:38282 [system_info.py:__init__():31] System info init
+2023-03-10 14:45:56,050 DEBUG   HandlerThread:38282 [system_info.py:__init__():46] System info init done
+2023-03-10 14:45:56,050 INFO    HandlerThread:38282 [system_monitor.py:start():183] Starting system monitor
+2023-03-10 14:45:56,050 INFO    SystemMonitor:38282 [system_monitor.py:_start():147] Starting system asset monitoring threads
+2023-03-10 14:45:56,050 INFO    HandlerThread:38282 [system_monitor.py:probe():204] Collecting system info
+2023-03-10 14:45:56,051 INFO    SystemMonitor:38282 [interfaces.py:start():187] Started cpu monitoring
+2023-03-10 14:45:56,051 INFO    SystemMonitor:38282 [interfaces.py:start():187] Started disk monitoring
+2023-03-10 14:45:56,052 INFO    SystemMonitor:38282 [interfaces.py:start():187] Started gpu monitoring
+2023-03-10 14:45:56,052 INFO    SystemMonitor:38282 [interfaces.py:start():187] Started memory monitoring
+2023-03-10 14:45:56,052 INFO    SystemMonitor:38282 [interfaces.py:start():187] Started network monitoring
+2023-03-10 14:45:56,074 DEBUG   HandlerThread:38282 [system_info.py:probe():195] Probing system
+2023-03-10 14:45:56,077 DEBUG   HandlerThread:38282 [system_info.py:_probe_git():180] Probing git
+2023-03-10 14:45:56,084 DEBUG   HandlerThread:38282 [system_info.py:_probe_git():188] Probing git done
+2023-03-10 14:45:56,084 DEBUG   HandlerThread:38282 [system_info.py:probe():240] Probing system done
+2023-03-10 14:45:56,085 DEBUG   HandlerThread:38282 [system_monitor.py:probe():213] {'os': 'Linux-5.15.0-60-generic-x86_64-with-glibc2.31', 'python': '3.9.13', 'heartbeatAt': '2023-03-10T06:45:56.074676', 'startedAt': '2023-03-10T06:45:54.606815', 'docker': None, 'cuda': None, 'args': None, 'state': 'running', 'program': '<python with no main file>', 'git': {'remote': 'https://github.com/gechengze/nlp-notebook.git', 'commit': '78112b7f1aa5793a6b76ed69e5f423a61e36c5ab'}, 'email': None, 'root': '/home/gechengze/project/nlp-notebook', 'host': 'ubuntu-3080', 'username': 'gechengze', 'executable': '/home/gechengze/anaconda3/bin/python', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 4.046666666666668, 'min': 800.0, 'max': 4800.0}, 'cpu_freq_per_core': [{'current': 4.1, 'min': 800.0, 'max': 4800.0}, {'current': 4.1, 'min': 800.0, 'max': 4800.0}, {'current': 4.1, 'min': 800.0, 'max': 4800.0}, {'current': 3.46, 'min': 800.0, 'max': 4800.0}, {'current': 4.1, 'min': 800.0, 'max': 4800.0}, {'current': 4.1, 'min': 800.0, 'max': 4800.0}, {'current': 4.1, 'min': 800.0, 'max': 4800.0}, {'current': 4.1, 'min': 800.0, 'max': 4800.0}, {'current': 4.1, 'min': 800.0, 'max': 4800.0}, {'current': 4.1, 'min': 800.0, 'max': 4800.0}, {'current': 4.1, 'min': 800.0, 'max': 4800.0}, {'current': 4.1, 'min': 800.0, 'max': 4800.0}], 'disk': {'total': 1043.379623413086, 'used': 32.46236801147461}, 'gpu': 'NVIDIA GeForce RTX 3080', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3080', 'memory_total': 10481106944}], 'memory': {'total': 15.54610824584961}}
+2023-03-10 14:45:56,085 INFO    HandlerThread:38282 [system_monitor.py:probe():214] Finished collecting system info
+2023-03-10 14:45:56,085 INFO    HandlerThread:38282 [system_monitor.py:probe():217] Publishing system info
+2023-03-10 14:45:56,085 DEBUG   HandlerThread:38282 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-03-10 14:45:56,085 DEBUG   HandlerThread:38282 [system_info.py:_save_pip():67] Saving pip packages done
+2023-03-10 14:45:56,085 DEBUG   HandlerThread:38282 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-03-10 14:45:56,464 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_created():278] file/dir created: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/requirements.txt
+2023-03-10 14:45:56,464 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_created():278] file/dir created: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/conda-environment.yaml
+2023-03-10 14:45:56,464 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_created():278] file/dir created: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:46:00,375 DEBUG   HandlerThread:38282 [system_info.py:_save_conda():86] Saving conda packages done
+2023-03-10 14:46:00,376 INFO    HandlerThread:38282 [system_monitor.py:probe():219] Finished publishing system info
+2023-03-10 14:46:00,377 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:46:00,377 DEBUG   SenderThread:38282 [sender.py:send():336] send: files
+2023-03-10 14:46:00,377 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-metadata.json with policy now
+2023-03-10 14:46:00,387 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-10 14:46:00,388 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: stop_status
+2023-03-10 14:46:00,464 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/conda-environment.yaml
+2023-03-10 14:46:00,464 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_created():278] file/dir created: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-metadata.json
+2023-03-10 14:46:00,817 DEBUG   SenderThread:38282 [sender.py:send():336] send: telemetry
+2023-03-10 14:46:01,465 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_created():278] file/dir created: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:46:02,390 ERROR   wandb-upload_0:38282 [internal_api.py:upload_file():1997] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/gechengze/seq2seq/ii1l2h1d/wandb-metadata.json?Expires=1678517161&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=aRRpBgSaDU%2FpnlCi0bLKwf9xZ%2BkWpHlQLly5mOO7iJ54axqKAZ1fc3h72J2KySEdhwdmUIoDwEuxAGdhzO1lVqWciNm%2Bm7cEDS%2BFxrUm19jRkk40EhrC2aH5aKy2eSxMYMPqjb9mr5b9O54lNnuHki7l7dDkXEI%2FcDcj3sjnPqG9%2Fhi%2FGGiE8zorBSGgEXLT7Wa%2FciI8uHQNxES7aZzgYgVylsczQ5KMurKpxXvdRHFG5QH5g2U%2BGumPJTiLyUadhwWimHfC0LIEKWLuLrHf%2Fe0dQ7Fy9NO4re4PmVWPXTBc1WKw17%2BE8HeOIz8sAh0naaleS%2Baz6A6DoduwCROJXw%3D%3D: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-production.appspot.com/gechengze/seq2seq/ii1l2h1d/wandb-metadata.json?Expires=1678517161&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=aRRpBgSaDU%2FpnlCi0bLKwf9xZ%2BkWpHlQLly5mOO7iJ54axqKAZ1fc3h72J2KySEdhwdmUIoDwEuxAGdhzO1lVqWciNm%2Bm7cEDS%2BFxrUm19jRkk40EhrC2aH5aKy2eSxMYMPqjb9mr5b9O54lNnuHki7l7dDkXEI%2FcDcj3sjnPqG9%2Fhi%2FGGiE8zorBSGgEXLT7Wa%2FciI8uHQNxES7aZzgYgVylsczQ5KMurKpxXvdRHFG5QH5g2U%2BGumPJTiLyUadhwWimHfC0LIEKWLuLrHf%2Fe0dQ7Fy9NO4re4PmVWPXTBc1WKw17%2BE8HeOIz8sAh0naaleS%2Baz6A6DoduwCROJXw%3D%3D (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))
+2023-03-10 14:46:02,390 ERROR   wandb-upload_0:38282 [internal_api.py:upload_file():1999] upload_file request headers: {'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '2384'}
+2023-03-10 14:46:02,390 ERROR   wandb-upload_0:38282 [internal_api.py:upload_file():2001] upload_file response body: 
+2023-03-10 14:46:02,657 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:46:02,658 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:46:02,658 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:46:02,660 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:46:03,465 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:46:03,465 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:46:04,683 ERROR   wandb-upload_0:38282 [internal_api.py:upload_file():1997] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/gechengze/seq2seq/ii1l2h1d/wandb-metadata.json?Expires=1678517161&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=aRRpBgSaDU%2FpnlCi0bLKwf9xZ%2BkWpHlQLly5mOO7iJ54axqKAZ1fc3h72J2KySEdhwdmUIoDwEuxAGdhzO1lVqWciNm%2Bm7cEDS%2BFxrUm19jRkk40EhrC2aH5aKy2eSxMYMPqjb9mr5b9O54lNnuHki7l7dDkXEI%2FcDcj3sjnPqG9%2Fhi%2FGGiE8zorBSGgEXLT7Wa%2FciI8uHQNxES7aZzgYgVylsczQ5KMurKpxXvdRHFG5QH5g2U%2BGumPJTiLyUadhwWimHfC0LIEKWLuLrHf%2Fe0dQ7Fy9NO4re4PmVWPXTBc1WKw17%2BE8HeOIz8sAh0naaleS%2Baz6A6DoduwCROJXw%3D%3D: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-production.appspot.com/gechengze/seq2seq/ii1l2h1d/wandb-metadata.json?Expires=1678517161&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=aRRpBgSaDU%2FpnlCi0bLKwf9xZ%2BkWpHlQLly5mOO7iJ54axqKAZ1fc3h72J2KySEdhwdmUIoDwEuxAGdhzO1lVqWciNm%2Bm7cEDS%2BFxrUm19jRkk40EhrC2aH5aKy2eSxMYMPqjb9mr5b9O54lNnuHki7l7dDkXEI%2FcDcj3sjnPqG9%2Fhi%2FGGiE8zorBSGgEXLT7Wa%2FciI8uHQNxES7aZzgYgVylsczQ5KMurKpxXvdRHFG5QH5g2U%2BGumPJTiLyUadhwWimHfC0LIEKWLuLrHf%2Fe0dQ7Fy9NO4re4PmVWPXTBc1WKw17%2BE8HeOIz8sAh0naaleS%2Baz6A6DoduwCROJXw%3D%3D (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))
+2023-03-10 14:46:04,683 ERROR   wandb-upload_0:38282 [internal_api.py:upload_file():1999] upload_file request headers: {'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '2384'}
+2023-03-10 14:46:04,683 ERROR   wandb-upload_0:38282 [internal_api.py:upload_file():2001] upload_file response body: 
+2023-03-10 14:46:04,702 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:46:04,702 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:46:04,703 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:46:04,703 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:46:05,465 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:46:05,465 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:46:05,704 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:46:06,774 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:46:06,775 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:46:06,775 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:46:06,775 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:46:07,338 INFO    wandb-upload_0:38282 [upload_job.py:push():138] Uploaded file /tmp/tmpxy1ssjs7wandb/si60q5hq-wandb-metadata.json
+2023-03-10 14:46:07,466 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:46:07,466 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:46:08,835 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:46:08,836 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:46:08,836 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:46:08,837 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:46:09,466 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:46:09,466 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:46:10,838 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:46:10,892 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:46:10,892 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:46:10,892 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:46:10,893 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:46:11,467 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:46:12,953 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:46:12,954 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:46:12,954 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:46:12,956 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:46:13,467 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:46:13,467 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:46:15,007 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:46:15,007 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:46:15,007 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:46:15,008 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:46:15,387 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:46:15,467 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:46:15,467 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:46:16,009 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:46:17,068 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:46:17,069 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:46:17,069 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:46:17,070 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:46:17,468 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:46:17,468 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:46:19,140 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:46:19,141 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:46:19,141 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:46:19,142 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:46:19,468 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:46:19,468 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:46:20,388 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:46:21,142 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:46:21,179 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:46:21,180 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:46:21,180 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:46:21,181 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:46:21,469 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:46:21,469 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:46:23,232 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:46:23,233 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:46:23,233 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:46:23,234 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:46:23,469 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:46:23,469 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:46:25,291 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:46:25,292 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:46:25,292 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:46:25,293 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:46:25,388 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:46:25,469 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:46:25,470 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:46:26,296 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:46:27,351 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:46:27,352 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:46:27,352 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:46:27,353 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:46:27,470 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:46:27,470 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/config.yaml
+2023-03-10 14:46:27,470 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:46:29,391 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:46:29,392 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:46:29,392 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:46:29,393 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:46:29,470 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:46:29,470 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:46:30,390 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:46:31,471 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:46:31,475 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:46:31,476 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:46:31,476 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:46:31,477 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:46:32,471 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:46:32,477 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:46:33,471 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:46:33,532 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:46:33,533 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:46:33,533 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:46:33,534 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:46:34,471 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:46:35,390 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:46:35,471 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:46:35,575 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:46:35,576 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:46:35,576 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:46:35,577 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:46:36,472 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:46:37,472 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:46:37,577 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:46:37,634 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:46:37,635 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:46:37,635 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:46:37,636 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:46:38,472 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:46:39,472 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:46:39,694 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:46:39,695 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:46:39,695 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:46:39,696 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:46:40,392 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:46:40,473 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:46:41,473 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:46:41,734 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:46:41,735 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:46:41,735 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:46:41,736 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:46:42,473 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:46:42,736 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:46:43,473 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:46:43,788 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:46:43,788 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:46:43,789 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:46:43,790 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:46:44,473 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:46:45,392 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:46:45,474 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:46:45,808 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:46:45,809 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:46:45,809 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:46:45,810 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:46:46,474 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:46:47,474 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:46:47,811 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:46:47,852 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:46:47,853 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:46:47,853 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:46:47,854 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:46:48,474 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:46:49,474 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:46:49,884 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:46:49,885 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:46:49,885 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:46:49,886 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:46:50,393 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:46:50,475 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:46:51,475 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:46:51,913 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:46:51,914 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:46:51,914 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:46:51,915 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:46:52,475 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:46:52,915 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:46:53,475 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:46:53,958 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:46:53,958 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:46:53,958 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:46:53,959 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:46:54,475 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:46:55,393 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:46:55,476 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:46:55,974 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:46:55,975 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:46:55,975 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:46:55,975 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:46:56,053 DEBUG   SystemMonitor:38282 [system_monitor.py:_start():161] Starting system metrics aggregation loop
+2023-03-10 14:46:56,053 DEBUG   SenderThread:38282 [sender.py:send():336] send: stats
+2023-03-10 14:46:56,476 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:46:57,476 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:46:57,986 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:46:57,986 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:46:57,987 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:46:57,987 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:46:57,987 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:46:58,476 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:46:59,477 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:47:00,014 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:47:00,015 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:47:00,015 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:47:00,015 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:47:00,394 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:47:00,477 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:47:01,477 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:47:02,053 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:47:02,054 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:47:02,054 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:47:02,054 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:47:02,477 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:47:03,055 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:47:03,477 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:47:04,072 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:47:04,072 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:47:04,072 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:47:04,073 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:47:04,478 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:47:05,395 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:47:05,478 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:47:06,097 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:47:06,097 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:47:06,098 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:47:06,098 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:47:06,478 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:47:07,478 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:47:08,098 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:47:08,128 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:47:08,129 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:47:08,142 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:47:08,142 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:47:08,478 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:47:09,479 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:47:10,159 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:47:10,159 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:47:10,159 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:47:10,160 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:47:10,396 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:47:10,479 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:47:11,479 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:47:12,190 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:47:12,191 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:47:12,191 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:47:12,191 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:47:12,479 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:47:13,191 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:47:13,479 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:47:14,240 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:47:14,241 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:47:14,241 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:47:14,242 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:47:14,480 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:47:15,396 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:47:15,480 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:47:16,265 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:47:16,266 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:47:16,266 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:47:16,266 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:47:16,480 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:47:17,480 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:47:18,267 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:47:18,288 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:47:18,288 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:47:18,288 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:47:18,289 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:47:18,481 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:47:19,481 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:47:20,311 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:47:20,312 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:47:20,312 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:47:20,312 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:47:20,397 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:47:20,481 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:47:21,481 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:47:22,340 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:47:22,340 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:47:22,340 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:47:22,341 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:47:22,481 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:47:23,341 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:47:23,482 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:47:24,373 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:47:24,374 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:47:24,374 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:47:24,375 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:47:24,482 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:47:25,398 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:47:25,482 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:47:26,054 DEBUG   SenderThread:38282 [sender.py:send():336] send: stats
+2023-03-10 14:47:26,388 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:47:26,389 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:47:26,389 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:47:26,389 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:47:26,482 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:47:27,482 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:47:28,390 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:47:28,408 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:47:28,408 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:47:28,409 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:47:28,409 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:47:28,483 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:47:29,483 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:47:30,398 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:47:30,427 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:47:30,428 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:47:30,428 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:47:30,428 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:47:30,483 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:47:31,483 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:47:32,423 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:47:32,424 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:47:32,424 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:47:32,424 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:47:32,483 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:47:33,424 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:47:33,484 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:47:34,452 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:47:34,453 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:47:34,453 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:47:34,454 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:47:34,484 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:47:35,399 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:47:35,484 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:47:36,499 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:47:36,500 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:47:36,500 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:47:36,500 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:47:37,485 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:47:37,485 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:47:38,501 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:47:38,505 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:47:38,506 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:47:38,506 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:47:38,506 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:47:39,485 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:47:39,485 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:47:40,400 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:47:40,555 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:47:40,555 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:47:40,556 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:47:40,556 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:47:41,485 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:47:41,485 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:47:42,578 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-10 14:47:42,579 DEBUG   SenderThread:38282 [sender.py:send():336] send: history
+2023-03-10 14:47:42,579 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: summary_record
+2023-03-10 14:47:42,580 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:47:42,580 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: pause
+2023-03-10 14:47:42,580 INFO    HandlerThread:38282 [handler.py:handle_request_pause():716] stopping system metrics thread or process
+2023-03-10 14:47:42,580 INFO    HandlerThread:38282 [system_monitor.py:finish():193] Stopping system monitor
+2023-03-10 14:47:42,581 DEBUG   SystemMonitor:38282 [system_monitor.py:_start():168] Finished system metrics aggregation loop
+2023-03-10 14:47:42,581 DEBUG   SystemMonitor:38282 [system_monitor.py:_start():172] Publishing last batch of metrics
+2023-03-10 14:47:42,581 INFO    HandlerThread:38282 [interfaces.py:finish():199] Joined cpu monitor
+2023-03-10 14:47:42,581 INFO    HandlerThread:38282 [interfaces.py:finish():199] Joined disk monitor
+2023-03-10 14:47:42,600 INFO    HandlerThread:38282 [interfaces.py:finish():199] Joined gpu monitor
+2023-03-10 14:47:42,600 INFO    HandlerThread:38282 [interfaces.py:finish():199] Joined memory monitor
+2023-03-10 14:47:42,600 INFO    HandlerThread:38282 [interfaces.py:finish():199] Joined network monitor
+2023-03-10 14:47:42,601 DEBUG   SenderThread:38282 [sender.py:send():336] send: stats
+2023-03-10 14:47:43,486 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:47:43,487 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:47:43,601 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:47:45,401 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:47:48,602 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:47:50,402 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:47:53,603 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:47:55,403 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:47:58,604 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:48:00,404 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:48:03,605 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:48:05,405 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:48:08,606 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:48:10,406 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:48:13,608 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:48:15,407 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:48:18,609 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:48:20,408 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:48:23,610 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:48:25,409 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:48:28,611 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:48:30,411 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:48:33,612 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:48:35,412 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:48:38,613 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:48:40,413 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:48:43,614 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:48:45,414 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:48:48,615 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:48:50,415 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:48:53,616 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:48:55,416 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:48:58,617 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:49:00,417 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:49:03,618 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:49:05,418 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:49:08,619 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:49:10,419 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:49:13,620 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:49:15,420 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:49:18,621 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:49:20,422 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-10 14:49:23,622 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:49:24,367 DEBUG   SenderThread:38282 [sender.py:send():336] send: exit
+2023-03-10 14:49:24,367 INFO    SenderThread:38282 [sender.py:send_exit():559] handling exit code: 0
+2023-03-10 14:49:24,367 INFO    SenderThread:38282 [sender.py:send_exit():561] handling runtime: 106
+2023-03-10 14:49:24,367 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:49:24,368 INFO    SenderThread:38282 [sender.py:send_exit():567] send defer
+2023-03-10 14:49:24,368 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: defer
+2023-03-10 14:49:24,368 INFO    HandlerThread:38282 [handler.py:handle_request_defer():170] handle defer: 0
+2023-03-10 14:49:24,368 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: defer
+2023-03-10 14:49:24,368 INFO    SenderThread:38282 [sender.py:send_request_defer():583] handle sender defer: 0
+2023-03-10 14:49:24,368 INFO    SenderThread:38282 [sender.py:transition_state():587] send defer: 1
+2023-03-10 14:49:24,368 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: defer
+2023-03-10 14:49:24,368 INFO    HandlerThread:38282 [handler.py:handle_request_defer():170] handle defer: 1
+2023-03-10 14:49:24,368 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: defer
+2023-03-10 14:49:24,368 INFO    SenderThread:38282 [sender.py:send_request_defer():583] handle sender defer: 1
+2023-03-10 14:49:24,368 INFO    SenderThread:38282 [sender.py:transition_state():587] send defer: 2
+2023-03-10 14:49:24,368 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: defer
+2023-03-10 14:49:24,368 INFO    HandlerThread:38282 [handler.py:handle_request_defer():170] handle defer: 2
+2023-03-10 14:49:24,368 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: defer
+2023-03-10 14:49:24,368 INFO    SenderThread:38282 [sender.py:send_request_defer():583] handle sender defer: 2
+2023-03-10 14:49:24,368 INFO    SenderThread:38282 [sender.py:transition_state():587] send defer: 3
+2023-03-10 14:49:24,369 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: defer
+2023-03-10 14:49:24,369 INFO    HandlerThread:38282 [handler.py:handle_request_defer():170] handle defer: 3
+2023-03-10 14:49:24,369 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: defer
+2023-03-10 14:49:24,369 INFO    SenderThread:38282 [sender.py:send_request_defer():583] handle sender defer: 3
+2023-03-10 14:49:24,369 INFO    SenderThread:38282 [sender.py:transition_state():587] send defer: 4
+2023-03-10 14:49:24,369 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: defer
+2023-03-10 14:49:24,369 INFO    HandlerThread:38282 [handler.py:handle_request_defer():170] handle defer: 4
+2023-03-10 14:49:24,369 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: defer
+2023-03-10 14:49:24,369 INFO    SenderThread:38282 [sender.py:send_request_defer():583] handle sender defer: 4
+2023-03-10 14:49:24,369 INFO    SenderThread:38282 [sender.py:transition_state():587] send defer: 5
+2023-03-10 14:49:24,369 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: defer
+2023-03-10 14:49:24,369 INFO    HandlerThread:38282 [handler.py:handle_request_defer():170] handle defer: 5
+2023-03-10 14:49:24,369 DEBUG   SenderThread:38282 [sender.py:send():336] send: summary
+2023-03-10 14:49:24,370 INFO    SenderThread:38282 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-10 14:49:24,370 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: defer
+2023-03-10 14:49:24,370 INFO    SenderThread:38282 [sender.py:send_request_defer():583] handle sender defer: 5
+2023-03-10 14:49:24,370 INFO    SenderThread:38282 [sender.py:transition_state():587] send defer: 6
+2023-03-10 14:49:24,370 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: defer
+2023-03-10 14:49:24,370 INFO    HandlerThread:38282 [handler.py:handle_request_defer():170] handle defer: 6
+2023-03-10 14:49:24,370 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: defer
+2023-03-10 14:49:24,370 INFO    SenderThread:38282 [sender.py:send_request_defer():583] handle sender defer: 6
+2023-03-10 14:49:24,370 INFO    SenderThread:38282 [sender.py:transition_state():587] send defer: 7
+2023-03-10 14:49:24,370 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:49:24,370 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: defer
+2023-03-10 14:49:24,370 INFO    HandlerThread:38282 [handler.py:handle_request_defer():170] handle defer: 7
+2023-03-10 14:49:24,370 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: defer
+2023-03-10 14:49:24,370 INFO    SenderThread:38282 [sender.py:send_request_defer():583] handle sender defer: 7
+2023-03-10 14:49:24,535 INFO    Thread-13 :38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:49:25,368 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: poll_exit
+2023-03-10 14:49:25,816 INFO    SenderThread:38282 [sender.py:transition_state():587] send defer: 8
+2023-03-10 14:49:25,816 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: poll_exit
+2023-03-10 14:49:25,817 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: defer
+2023-03-10 14:49:25,817 INFO    HandlerThread:38282 [handler.py:handle_request_defer():170] handle defer: 8
+2023-03-10 14:49:25,818 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: defer
+2023-03-10 14:49:25,818 INFO    SenderThread:38282 [sender.py:send_request_defer():583] handle sender defer: 8
+2023-03-10 14:49:25,819 INFO    SenderThread:38282 [sender.py:transition_state():587] send defer: 9
+2023-03-10 14:49:25,819 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: defer
+2023-03-10 14:49:25,819 INFO    HandlerThread:38282 [handler.py:handle_request_defer():170] handle defer: 9
+2023-03-10 14:49:25,820 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: defer
+2023-03-10 14:49:25,820 INFO    SenderThread:38282 [sender.py:send_request_defer():583] handle sender defer: 9
+2023-03-10 14:49:25,820 INFO    SenderThread:38282 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-03-10 14:49:26,368 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: poll_exit
+2023-03-10 14:49:26,535 INFO    SenderThread:38282 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:49:26,535 INFO    SenderThread:38282 [dir_watcher.py:finish():395] scan: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files
+2023-03-10 14:49:26,535 INFO    SenderThread:38282 [dir_watcher.py:finish():409] scan save: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/requirements.txt requirements.txt
+2023-03-10 14:49:26,536 INFO    SenderThread:38282 [dir_watcher.py:finish():409] scan save: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json wandb-summary.json
+2023-03-10 14:49:26,536 INFO    SenderThread:38282 [dir_watcher.py:finish():409] scan save: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/conda-environment.yaml conda-environment.yaml
+2023-03-10 14:49:26,536 INFO    SenderThread:38282 [dir_watcher.py:finish():409] scan save: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log output.log
+2023-03-10 14:49:26,539 INFO    SenderThread:38282 [dir_watcher.py:finish():409] scan save: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/config.yaml config.yaml
+2023-03-10 14:49:26,544 INFO    SenderThread:38282 [dir_watcher.py:finish():409] scan save: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-metadata.json wandb-metadata.json
+2023-03-10 14:49:26,544 INFO    SenderThread:38282 [sender.py:transition_state():587] send defer: 10
+2023-03-10 14:49:26,544 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: poll_exit
+2023-03-10 14:49:26,545 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: defer
+2023-03-10 14:49:26,545 INFO    HandlerThread:38282 [handler.py:handle_request_defer():170] handle defer: 10
+2023-03-10 14:49:26,547 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: defer
+2023-03-10 14:49:26,547 INFO    SenderThread:38282 [sender.py:send_request_defer():583] handle sender defer: 10
+2023-03-10 14:49:26,547 INFO    SenderThread:38282 [file_pusher.py:finish():164] shutting down file pusher
+2023-03-10 14:49:27,307 INFO    wandb-upload_3:38282 [upload_job.py:push():138] Uploaded file /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/output.log
+2023-03-10 14:49:27,370 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: poll_exit
+2023-03-10 14:49:27,371 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: poll_exit
+2023-03-10 14:49:27,476 INFO    wandb-upload_0:38282 [upload_job.py:push():138] Uploaded file /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/requirements.txt
+2023-03-10 14:49:27,589 INFO    wandb-upload_2:38282 [upload_job.py:push():138] Uploaded file /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/conda-environment.yaml
+2023-03-10 14:49:28,008 ERROR   wandb-upload_4:38282 [internal_api.py:upload_file():1997] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/gechengze/seq2seq/ii1l2h1d/config.yaml?Expires=1678517366&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=jJzNIMBLzIxyfhsstoU5mRUpvXzwg1JxUrknPe%2BgFHs%2FnGyyprVY%2BT%2BbWsGH4D5RpmHpagQ3bmCmAAsRoHSktTGy0kjDuG4WPH1vINWaNwVG9ATs08QW3dDAKzpgGxakRiIS1SS7Llvn%2F4MqSCH8tR2ZNNPVErpBuQeekwH5WQROYNyYNTxnWdpT1NX%2BcyvWxwX425kExE9%2BLFbrYnmXGU%2BI7opFFZDE8vP8W%2F4A56o%2F1ifDJ0P8%2FG9GV2LmVnuJqsQadY34Ywsz4Ot5WnXtkAbJjCfzUmLjiMATugVR4S7zP0X4yZ%2FqV4SvQDGXRvHVqASyEuP3CM%2FCLTksr3DgUw%3D%3D: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-production.appspot.com/gechengze/seq2seq/ii1l2h1d/config.yaml?Expires=1678517366&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=jJzNIMBLzIxyfhsstoU5mRUpvXzwg1JxUrknPe%2BgFHs%2FnGyyprVY%2BT%2BbWsGH4D5RpmHpagQ3bmCmAAsRoHSktTGy0kjDuG4WPH1vINWaNwVG9ATs08QW3dDAKzpgGxakRiIS1SS7Llvn%2F4MqSCH8tR2ZNNPVErpBuQeekwH5WQROYNyYNTxnWdpT1NX%2BcyvWxwX425kExE9%2BLFbrYnmXGU%2BI7opFFZDE8vP8W%2F4A56o%2F1ifDJ0P8%2FG9GV2LmVnuJqsQadY34Ywsz4Ot5WnXtkAbJjCfzUmLjiMATugVR4S7zP0X4yZ%2FqV4SvQDGXRvHVqASyEuP3CM%2FCLTksr3DgUw%3D%3D (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))
+2023-03-10 14:49:28,009 ERROR   wandb-upload_4:38282 [internal_api.py:upload_file():1999] upload_file request headers: {'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '421'}
+2023-03-10 14:49:28,009 ERROR   wandb-upload_4:38282 [internal_api.py:upload_file():2001] upload_file response body: 
+2023-03-10 14:49:28,014 ERROR   wandb-upload_1:38282 [internal_api.py:upload_file():1997] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/gechengze/seq2seq/ii1l2h1d/wandb-summary.json?Expires=1678517366&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=mLWIeAm9B7yW68Uz47tuMoCHX110R3PkK0g8FrZ5l9ILfrB9OcgAlEzKoJ195eG%2FnMHJiNlG6eq65ui0f8B1ocn49cyl2PoBQ0oBZHeHN9Cl9UpdqQwUtaFQvfaNfBWwZb3jUYup1cid8AIxCOv4fqw7xCidVZLU8oWv2LaEaTFkZbP3e1W0%2Fqrp2z75QGeaqx8tGCMybEV0z3zz3RLrSJ4AgQcDqLBl5A1r4cX3bWwEaR8Q5nQk%2BicG0U3DYcGhI7IXY%2BrdlF3q3po0UkxjE99E1xB1WfrByGvqbN2oRtMuspAPn4joFKqdiNXOw2ix0xHSegh3hDCcSXQt0H8irQ%3D%3D: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-production.appspot.com/gechengze/seq2seq/ii1l2h1d/wandb-summary.json?Expires=1678517366&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=mLWIeAm9B7yW68Uz47tuMoCHX110R3PkK0g8FrZ5l9ILfrB9OcgAlEzKoJ195eG%2FnMHJiNlG6eq65ui0f8B1ocn49cyl2PoBQ0oBZHeHN9Cl9UpdqQwUtaFQvfaNfBWwZb3jUYup1cid8AIxCOv4fqw7xCidVZLU8oWv2LaEaTFkZbP3e1W0%2Fqrp2z75QGeaqx8tGCMybEV0z3zz3RLrSJ4AgQcDqLBl5A1r4cX3bWwEaR8Q5nQk%2BicG0U3DYcGhI7IXY%2BrdlF3q3po0UkxjE99E1xB1WfrByGvqbN2oRtMuspAPn4joFKqdiNXOw2ix0xHSegh3hDCcSXQt0H8irQ%3D%3D (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))
+2023-03-10 14:49:28,014 ERROR   wandb-upload_1:38282 [internal_api.py:upload_file():1999] upload_file request headers: {'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '179'}
+2023-03-10 14:49:28,014 ERROR   wandb-upload_1:38282 [internal_api.py:upload_file():2001] upload_file response body: 
+2023-03-10 14:49:29,372 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: status_report
+2023-03-10 14:49:29,648 INFO    wandb-upload_1:38282 [upload_job.py:push():138] Uploaded file /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/wandb-summary.json
+2023-03-10 14:49:29,677 INFO    wandb-upload_4:38282 [upload_job.py:push():138] Uploaded file /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/files/config.yaml
+2023-03-10 14:49:29,878 INFO    Thread-12 :38282 [sender.py:transition_state():587] send defer: 11
+2023-03-10 14:49:29,879 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: defer
+2023-03-10 14:49:29,879 INFO    HandlerThread:38282 [handler.py:handle_request_defer():170] handle defer: 11
+2023-03-10 14:49:29,880 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: defer
+2023-03-10 14:49:29,880 INFO    SenderThread:38282 [sender.py:send_request_defer():583] handle sender defer: 11
+2023-03-10 14:49:29,880 INFO    SenderThread:38282 [file_pusher.py:join():169] waiting for file pusher
+2023-03-10 14:49:29,880 INFO    SenderThread:38282 [sender.py:transition_state():587] send defer: 12
+2023-03-10 14:49:29,881 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: defer
+2023-03-10 14:49:29,881 INFO    HandlerThread:38282 [handler.py:handle_request_defer():170] handle defer: 12
+2023-03-10 14:49:29,881 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: defer
+2023-03-10 14:49:29,882 INFO    SenderThread:38282 [sender.py:send_request_defer():583] handle sender defer: 12
+2023-03-10 14:49:30,137 INFO    SenderThread:38282 [sender.py:transition_state():587] send defer: 13
+2023-03-10 14:49:30,137 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: defer
+2023-03-10 14:49:30,137 INFO    HandlerThread:38282 [handler.py:handle_request_defer():170] handle defer: 13
+2023-03-10 14:49:30,138 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: defer
+2023-03-10 14:49:30,138 INFO    SenderThread:38282 [sender.py:send_request_defer():583] handle sender defer: 13
+2023-03-10 14:49:30,139 INFO    SenderThread:38282 [sender.py:transition_state():587] send defer: 14
+2023-03-10 14:49:30,139 DEBUG   HandlerThread:38282 [handler.py:handle_request():144] handle_request: defer
+2023-03-10 14:49:30,139 INFO    HandlerThread:38282 [handler.py:handle_request_defer():170] handle defer: 14
+2023-03-10 14:49:30,140 DEBUG   SenderThread:38282 [sender.py:send():336] send: final
+2023-03-10 14:49:30,141 DEBUG   SenderThread:38282 [sender.py:send():336] send: footer
+2023-03-10 14:49:30,141 DEBUG   SenderThread:38282 [sender.py:send_request():363] send_request: defer
+2023-03-10 14:49:30,141 INFO    SenderThread:38282 [sender.py:send_request_defer():583] handle sender defer: 14
+2023-03-10 14:49:32,668 WARNING StreamThr :38282 [internal.py:is_dead():415] Internal process exiting, parent pid 38250 disappeared
+2023-03-10 14:49:32,668 ERROR   StreamThr :38282 [internal.py:wandb_internal():153] Internal process shutdown.
+2023-03-10 14:49:33,140 INFO    HandlerThread:38282 [handler.py:finish():842] shutting down handler
+2023-03-10 14:49:33,141 INFO    WriterThread:38282 [datastore.py:close():298] close: /home/gechengze/project/nlp-notebook/models/wandb/run-20230310_144554-ii1l2h1d/run-ii1l2h1d.wandb
+2023-03-10 14:49:33,142 INFO    SenderThread:38282 [sender.py:finish():1504] shutting down sender
+2023-03-10 14:49:33,142 INFO    SenderThread:38282 [file_pusher.py:finish():164] shutting down file pusher
+2023-03-10 14:49:33,142 INFO    SenderThread:38282 [file_pusher.py:join():169] waiting for file pusher

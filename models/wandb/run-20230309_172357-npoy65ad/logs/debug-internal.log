@@ -1,0 +1,966 @@
+2023-03-09 17:23:57,694 INFO    StreamThr :30379 [internal.py:wandb_internal():87] W&B internal server running at pid: 30379, started at: 2023-03-09 17:23:57.693900
+2023-03-09 17:23:57,695 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status
+2023-03-09 17:23:57,702 INFO    WriterThread:30379 [datastore.py:open_for_write():85] open: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/run-npoy65ad.wandb
+2023-03-09 17:23:57,703 DEBUG   SenderThread:30379 [sender.py:send():336] send: header
+2023-03-09 17:23:57,813 DEBUG   SenderThread:30379 [sender.py:send():336] send: run
+2023-03-09 17:23:58,555 INFO    SenderThread:30379 [dir_watcher.py:__init__():219] watching files in: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files
+2023-03-09 17:23:58,555 INFO    SenderThread:30379 [sender.py:_start_run_threads():1078] run started: npoy65ad with start time 1678353837.693327
+2023-03-09 17:23:58,555 DEBUG   SenderThread:30379 [sender.py:send_request():363] send_request: summary_record
+2023-03-09 17:23:58,556 INFO    SenderThread:30379 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-09 17:23:58,557 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: check_version
+2023-03-09 17:23:58,557 DEBUG   SenderThread:30379 [sender.py:send_request():363] send_request: check_version
+2023-03-09 17:23:59,183 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: run_start
+2023-03-09 17:23:59,185 DEBUG   HandlerThread:30379 [system_info.py:__init__():31] System info init
+2023-03-09 17:23:59,185 DEBUG   HandlerThread:30379 [system_info.py:__init__():46] System info init done
+2023-03-09 17:23:59,185 INFO    HandlerThread:30379 [system_monitor.py:start():183] Starting system monitor
+2023-03-09 17:23:59,185 INFO    SystemMonitor:30379 [system_monitor.py:_start():147] Starting system asset monitoring threads
+2023-03-09 17:23:59,186 INFO    SystemMonitor:30379 [interfaces.py:start():187] Started cpu monitoring
+2023-03-09 17:23:59,186 INFO    SystemMonitor:30379 [interfaces.py:start():187] Started disk monitoring
+2023-03-09 17:23:59,186 INFO    HandlerThread:30379 [system_monitor.py:probe():204] Collecting system info
+2023-03-09 17:23:59,187 INFO    SystemMonitor:30379 [interfaces.py:start():187] Started gpu monitoring
+2023-03-09 17:23:59,187 INFO    SystemMonitor:30379 [interfaces.py:start():187] Started memory monitoring
+2023-03-09 17:23:59,187 INFO    SystemMonitor:30379 [interfaces.py:start():187] Started network monitoring
+2023-03-09 17:23:59,206 DEBUG   HandlerThread:30379 [system_info.py:probe():195] Probing system
+2023-03-09 17:23:59,209 DEBUG   HandlerThread:30379 [system_info.py:_probe_git():180] Probing git
+2023-03-09 17:23:59,215 DEBUG   HandlerThread:30379 [system_info.py:_probe_git():188] Probing git done
+2023-03-09 17:23:59,215 DEBUG   HandlerThread:30379 [system_info.py:probe():240] Probing system done
+2023-03-09 17:23:59,215 DEBUG   HandlerThread:30379 [system_monitor.py:probe():213] {'os': 'Linux-5.15.0-60-generic-x86_64-with-glibc2.31', 'python': '3.9.13', 'heartbeatAt': '2023-03-09T09:23:59.206550', 'startedAt': '2023-03-09T09:23:57.684281', 'docker': None, 'cuda': None, 'args': None, 'state': 'running', 'program': '<python with no main file>', 'git': {'remote': 'https://github.com/gechengze/nlp-notebook.git', 'commit': '78112b7f1aa5793a6b76ed69e5f423a61e36c5ab'}, 'email': None, 'root': '/home/gechengze/project/nlp-notebook', 'host': 'ubuntu-3080', 'username': 'gechengze', 'executable': '/home/gechengze/anaconda3/bin/python', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 4.132250000000001, 'min': 800.0, 'max': 4800.0}, 'cpu_freq_per_core': [{'current': 4.1, 'min': 800.0, 'max': 4800.0}, {'current': 4.1, 'min': 800.0, 'max': 4800.0}, {'current': 4.1, 'min': 800.0, 'max': 4800.0}, {'current': 4.1, 'min': 800.0, 'max': 4800.0}, {'current': 4.487, 'min': 800.0, 'max': 4800.0}, {'current': 4.1, 'min': 800.0, 'max': 4800.0}, {'current': 4.1, 'min': 800.0, 'max': 4800.0}, {'current': 4.1, 'min': 800.0, 'max': 4800.0}, {'current': 4.1, 'min': 800.0, 'max': 4800.0}, {'current': 4.1, 'min': 800.0, 'max': 4800.0}, {'current': 4.1, 'min': 800.0, 'max': 4800.0}, {'current': 4.1, 'min': 800.0, 'max': 4800.0}], 'disk': {'total': 1043.379623413086, 'used': 32.236209869384766}, 'gpu': 'NVIDIA GeForce RTX 3080', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3080', 'memory_total': 10481106944}], 'memory': {'total': 15.54610824584961}}
+2023-03-09 17:23:59,216 INFO    HandlerThread:30379 [system_monitor.py:probe():214] Finished collecting system info
+2023-03-09 17:23:59,216 INFO    HandlerThread:30379 [system_monitor.py:probe():217] Publishing system info
+2023-03-09 17:23:59,216 DEBUG   HandlerThread:30379 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-03-09 17:23:59,216 DEBUG   HandlerThread:30379 [system_info.py:_save_pip():67] Saving pip packages done
+2023-03-09 17:23:59,216 DEBUG   HandlerThread:30379 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-03-09 17:23:59,557 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_created():278] file/dir created: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/conda-environment.yaml
+2023-03-09 17:23:59,557 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_created():278] file/dir created: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/requirements.txt
+2023-03-09 17:23:59,557 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_created():278] file/dir created: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/wandb-summary.json
+2023-03-09 17:24:03,433 DEBUG   HandlerThread:30379 [system_info.py:_save_conda():86] Saving conda packages done
+2023-03-09 17:24:03,433 INFO    HandlerThread:30379 [system_monitor.py:probe():219] Finished publishing system info
+2023-03-09 17:24:03,435 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:24:03,435 DEBUG   SenderThread:30379 [sender.py:send():336] send: files
+2023-03-09 17:24:03,435 INFO    SenderThread:30379 [sender.py:_save_file():1332] saving file wandb-metadata.json with policy now
+2023-03-09 17:24:03,442 DEBUG   SenderThread:30379 [sender.py:send():336] send: telemetry
+2023-03-09 17:24:03,443 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-09 17:24:03,443 DEBUG   SenderThread:30379 [sender.py:send_request():363] send_request: stop_status
+2023-03-09 17:24:03,558 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/conda-environment.yaml
+2023-03-09 17:24:03,558 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_created():278] file/dir created: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/wandb-metadata.json
+2023-03-09 17:24:04,330 INFO    wandb-upload_0:30379 [upload_job.py:push():138] Uploaded file /tmp/tmptj25aomjwandb/0izv9qet-wandb-metadata.json
+2023-03-09 17:24:04,558 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_created():278] file/dir created: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:24:06,558 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:24:08,184 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:24:08,559 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:24:10,559 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:24:12,560 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:24:13,269 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:24:14,560 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:24:16,561 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:24:18,276 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:24:18,442 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:24:18,561 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:24:20,561 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:24:22,562 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:24:23,365 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:24:23,442 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:24:24,562 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:24:26,563 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:24:28,448 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:24:28,457 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:24:28,563 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:24:30,563 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/config.yaml
+2023-03-09 17:24:30,564 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:24:32,564 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:24:33,449 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:24:34,564 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:24:35,002 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:24:36,565 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:24:38,449 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:24:38,565 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:24:40,094 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:24:40,566 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:24:42,566 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:24:43,460 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:24:44,567 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:24:45,187 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:24:46,567 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:24:48,461 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:24:48,567 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:24:50,281 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:24:50,568 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:24:52,568 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:24:53,473 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:24:54,568 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:24:55,377 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:24:56,569 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:24:58,476 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:24:58,569 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:24:59,188 DEBUG   SystemMonitor:30379 [system_monitor.py:_start():161] Starting system metrics aggregation loop
+2023-03-09 17:24:59,188 DEBUG   SenderThread:30379 [sender.py:send():336] send: stats
+2023-03-09 17:25:00,475 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:25:00,570 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:25:02,570 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:25:03,476 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:25:04,571 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:25:05,573 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:25:06,571 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:25:08,477 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:25:08,571 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:25:10,572 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:25:10,673 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:25:12,572 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:25:13,477 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:25:14,573 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:25:15,773 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:25:16,573 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:25:18,478 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:25:18,573 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:25:20,574 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:25:20,873 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:25:22,574 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:25:23,478 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:25:24,575 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:25:25,973 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:25:26,575 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:25:28,480 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:25:28,576 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:25:29,189 DEBUG   SenderThread:30379 [sender.py:send():336] send: stats
+2023-03-09 17:25:30,576 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:25:31,075 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:25:32,576 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:25:33,481 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:25:34,577 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:25:36,176 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:25:36,577 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:25:38,481 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:25:38,578 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:25:40,578 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:25:41,277 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:25:42,578 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:25:43,482 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:25:44,579 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:25:46,377 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:25:46,579 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:25:48,493 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:25:48,580 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:25:50,580 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:25:51,477 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:25:52,580 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:25:53,507 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:25:54,581 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:25:56,527 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:25:56,581 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:25:58,508 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:25:58,582 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:25:59,189 DEBUG   SenderThread:30379 [sender.py:send():336] send: stats
+2023-03-09 17:26:00,582 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:26:01,580 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:26:02,583 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:26:03,512 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:26:04,583 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:26:06,582 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:26:06,584 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:26:08,584 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:26:09,036 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:26:10,585 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:26:11,583 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:26:12,585 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:26:14,036 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:26:14,585 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:26:15,151 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-09 17:26:15,152 DEBUG   SenderThread:30379 [sender.py:send():336] send: history
+2023-03-09 17:26:15,152 DEBUG   SenderThread:30379 [sender.py:send_request():363] send_request: summary_record
+2023-03-09 17:26:15,153 INFO    SenderThread:30379 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-09 17:26:15,585 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/wandb-summary.json
+2023-03-09 17:26:16,586 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:26:16,665 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:26:18,586 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:26:19,038 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:26:20,587 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:26:21,670 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:26:22,587 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:26:24,039 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:26:24,587 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:26:26,588 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:26:26,673 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:26:28,588 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:26:29,039 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:26:29,189 DEBUG   SenderThread:30379 [sender.py:send():336] send: stats
+2023-03-09 17:26:30,589 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:26:31,678 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:26:32,589 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:26:34,040 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:26:34,589 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:26:36,683 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:26:37,590 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:26:39,043 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:26:39,590 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:26:41,591 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:26:41,687 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:26:43,591 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:26:44,044 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:26:45,592 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:26:46,691 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:26:47,592 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:26:49,044 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:26:49,592 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:26:51,593 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:26:51,695 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:26:53,593 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:26:54,045 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:26:55,594 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:26:56,762 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:26:57,594 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:26:59,045 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:26:59,189 DEBUG   SenderThread:30379 [sender.py:send():336] send: stats
+2023-03-09 17:26:59,594 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:27:01,595 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:27:01,809 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:27:03,595 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:27:04,046 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:27:05,596 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:27:06,814 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:27:07,596 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:27:09,047 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:27:09,596 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:27:11,597 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:27:11,819 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:27:13,597 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:27:14,047 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:27:15,598 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:27:16,823 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:27:17,598 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:27:19,053 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:27:19,598 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:27:21,599 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:27:21,828 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:27:23,599 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:27:24,054 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:27:25,600 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:27:26,833 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:27:27,600 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:27:29,054 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:27:29,190 DEBUG   SenderThread:30379 [sender.py:send():336] send: stats
+2023-03-09 17:27:29,600 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:27:31,601 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:27:31,838 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:27:33,601 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:27:34,055 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:27:35,601 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:27:36,844 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:27:37,602 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:27:39,056 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:27:39,602 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:27:41,603 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:27:41,849 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:27:43,603 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:27:44,056 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:27:45,603 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:27:46,855 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:27:47,604 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:27:49,057 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:27:49,604 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:27:51,605 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:27:51,860 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:27:53,605 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:27:54,057 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:27:55,605 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:27:56,866 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:27:57,606 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:27:59,061 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:27:59,190 DEBUG   SenderThread:30379 [sender.py:send():336] send: stats
+2023-03-09 17:27:59,606 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:28:01,607 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:28:01,871 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:28:03,607 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:28:04,645 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:28:04,645 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:28:05,607 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:28:06,880 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:28:07,608 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:28:09,608 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:28:09,651 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:28:11,609 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:28:11,933 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:28:13,609 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:28:14,653 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:28:15,610 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:28:16,990 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:28:17,610 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:28:19,610 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:28:19,653 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:28:21,611 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:28:22,046 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:28:23,611 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:28:24,654 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:28:25,185 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-09 17:28:25,186 DEBUG   SenderThread:30379 [sender.py:send():336] send: history
+2023-03-09 17:28:25,186 DEBUG   SenderThread:30379 [sender.py:send_request():363] send_request: summary_record
+2023-03-09 17:28:25,186 INFO    SenderThread:30379 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-09 17:28:25,612 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:28:25,612 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/wandb-summary.json
+2023-03-09 17:28:27,130 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:28:27,612 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:28:29,191 DEBUG   SenderThread:30379 [sender.py:send():336] send: stats
+2023-03-09 17:28:29,612 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:28:29,657 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:28:31,613 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:28:32,133 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:28:33,613 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:28:34,657 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:28:35,614 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:28:37,136 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:28:37,614 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:28:39,614 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:28:39,658 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:28:41,615 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:28:42,139 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:28:43,615 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:28:44,659 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:28:45,615 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:28:47,142 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:28:47,616 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:28:49,616 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:28:49,659 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:28:51,617 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:28:52,145 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:28:53,617 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:28:54,660 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:28:55,618 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:28:57,148 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:28:57,618 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:28:59,191 DEBUG   SenderThread:30379 [sender.py:send():336] send: stats
+2023-03-09 17:28:59,619 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:28:59,660 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:29:01,619 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:29:02,151 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:29:03,619 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:29:04,661 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:29:05,620 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:29:07,154 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:29:07,620 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:29:09,621 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:29:09,661 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:29:11,621 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:29:12,157 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:29:13,622 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:29:14,662 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:29:15,622 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:29:17,160 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:29:17,622 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:29:19,623 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:29:19,662 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:29:21,623 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:29:22,164 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:29:23,624 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:29:24,663 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:29:25,624 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:29:27,168 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:29:27,624 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:29:29,191 DEBUG   SenderThread:30379 [sender.py:send():336] send: stats
+2023-03-09 17:29:29,625 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:29:29,663 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:29:31,625 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:29:32,171 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:29:33,626 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:29:34,664 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:29:35,626 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:29:37,175 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:29:37,626 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:29:39,627 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:29:39,664 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:29:41,627 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:29:42,178 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:29:43,628 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:29:44,781 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:29:45,628 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:29:47,264 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:29:47,629 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:29:49,629 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:29:49,782 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:29:51,629 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:29:52,270 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:29:53,630 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:29:54,782 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:29:55,630 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:29:57,276 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:29:57,631 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:29:59,192 DEBUG   SenderThread:30379 [sender.py:send():336] send: stats
+2023-03-09 17:29:59,631 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:29:59,783 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:30:01,631 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:30:02,283 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:30:03,632 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:30:04,787 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:30:05,632 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:30:07,476 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:30:08,633 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:30:09,787 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:30:10,633 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:30:12,505 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:30:12,633 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:30:14,634 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:30:14,788 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:30:16,634 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:30:17,550 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:30:18,635 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:30:19,788 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:30:20,635 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:30:22,608 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:30:22,635 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:30:24,636 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:30:24,791 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:30:26,636 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:30:27,665 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:30:28,637 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:30:29,192 DEBUG   SenderThread:30379 [sender.py:send():336] send: stats
+2023-03-09 17:30:29,792 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:30:30,637 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:30:32,637 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:30:32,717 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:30:34,638 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:30:34,796 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:30:35,332 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-09 17:30:35,332 DEBUG   SenderThread:30379 [sender.py:send():336] send: history
+2023-03-09 17:30:35,332 DEBUG   SenderThread:30379 [sender.py:send_request():363] send_request: summary_record
+2023-03-09 17:30:35,333 INFO    SenderThread:30379 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-09 17:30:35,638 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/wandb-summary.json
+2023-03-09 17:30:36,638 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:30:37,783 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:30:38,638 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:30:39,796 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:30:40,639 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:30:42,639 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:30:42,787 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:30:44,640 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:30:44,797 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:30:46,640 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:30:47,790 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:30:48,641 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:30:49,798 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:30:50,641 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:30:52,642 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:30:52,793 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:30:54,642 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:30:54,799 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:30:56,642 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:30:57,797 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:30:58,643 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:30:59,192 DEBUG   SenderThread:30379 [sender.py:send():336] send: stats
+2023-03-09 17:30:59,802 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:31:00,643 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:31:02,644 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:31:02,801 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:31:04,644 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:31:04,803 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:31:06,644 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:31:07,803 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:31:08,645 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:31:09,803 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:31:10,645 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:31:12,646 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:31:12,806 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:31:14,646 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:31:14,804 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:31:16,646 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:31:17,810 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:31:18,647 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:31:19,804 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:31:20,647 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:31:22,648 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:31:22,813 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:31:24,648 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:31:25,895 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:31:26,649 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:31:27,853 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:31:28,649 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:31:29,193 DEBUG   SenderThread:30379 [sender.py:send():336] send: stats
+2023-03-09 17:31:30,650 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:31:30,896 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:31:32,650 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:31:32,859 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:31:34,651 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:31:35,896 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:31:36,651 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:31:37,866 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:31:38,651 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:31:40,652 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:31:40,897 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:31:42,652 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:31:42,872 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:31:44,653 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:31:45,898 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:31:46,653 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:31:47,878 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:31:48,653 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:31:50,654 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:31:50,908 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:31:52,654 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:31:52,885 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:31:54,655 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:31:55,908 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:31:56,655 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:31:57,891 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:31:58,655 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:31:59,193 DEBUG   SenderThread:30379 [sender.py:send():336] send: stats
+2023-03-09 17:32:00,656 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:32:00,909 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:32:02,656 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:32:02,897 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:32:04,657 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:32:05,910 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:32:06,657 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:32:07,945 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:32:08,658 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:32:10,658 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:32:10,911 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:32:12,659 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:32:13,012 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:32:14,659 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:32:15,912 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:32:16,659 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:32:18,015 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:32:18,660 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:32:20,660 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:32:20,917 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:32:22,661 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:32:23,019 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:32:24,662 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:32:25,918 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:32:26,662 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:32:28,029 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:32:28,662 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:32:29,194 DEBUG   SenderThread:30379 [sender.py:send():336] send: stats
+2023-03-09 17:32:30,663 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:32:30,918 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:32:32,663 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:32:33,094 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:32:34,664 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:32:35,919 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:32:36,664 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:32:38,145 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:32:38,665 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:32:40,665 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:32:40,922 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:32:42,665 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:32:43,194 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:32:44,666 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:32:45,390 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-09 17:32:45,391 DEBUG   SenderThread:30379 [sender.py:send():336] send: history
+2023-03-09 17:32:45,391 DEBUG   SenderThread:30379 [sender.py:send_request():363] send_request: summary_record
+2023-03-09 17:32:45,391 INFO    SenderThread:30379 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-09 17:32:45,666 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/wandb-summary.json
+2023-03-09 17:32:45,923 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:32:46,666 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:32:48,258 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:32:48,667 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:32:50,667 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:32:50,923 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:32:52,667 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:32:53,262 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:32:54,668 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:32:55,924 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:32:56,668 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:32:58,265 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:32:58,669 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:32:59,194 DEBUG   SenderThread:30379 [sender.py:send():336] send: stats
+2023-03-09 17:33:00,669 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:33:00,924 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:33:02,669 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:33:03,270 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:33:04,670 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:33:06,670 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:33:06,944 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:33:06,945 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:33:08,282 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:33:08,671 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:33:10,671 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:33:12,671 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:33:12,945 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:33:13,289 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:33:14,672 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:33:16,672 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:33:17,946 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:33:18,294 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:33:18,673 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:33:20,673 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:33:22,673 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:33:22,947 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:33:23,298 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:33:24,674 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:33:26,674 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:33:27,947 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:33:28,301 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:33:28,674 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:33:29,194 DEBUG   SenderThread:30379 [sender.py:send():336] send: stats
+2023-03-09 17:33:30,675 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:33:32,948 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:33:33,304 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:33:33,676 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:33:35,676 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:33:37,676 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:33:37,948 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:33:38,309 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:33:39,677 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:33:41,677 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:33:42,949 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:33:43,312 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:33:43,678 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:33:45,678 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:33:47,679 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:33:47,949 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:33:48,320 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:33:49,679 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:33:51,679 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:33:52,950 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:33:53,332 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:33:53,680 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:33:55,680 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:33:57,681 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:33:57,951 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:33:58,344 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:33:59,195 DEBUG   SenderThread:30379 [sender.py:send():336] send: stats
+2023-03-09 17:33:59,681 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:34:01,682 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:34:02,484 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: pause
+2023-03-09 17:34:02,484 INFO    HandlerThread:30379 [handler.py:handle_request_pause():716] stopping system metrics thread or process
+2023-03-09 17:34:02,484 INFO    HandlerThread:30379 [system_monitor.py:finish():193] Stopping system monitor
+2023-03-09 17:34:02,485 DEBUG   SystemMonitor:30379 [system_monitor.py:_start():168] Finished system metrics aggregation loop
+2023-03-09 17:34:02,486 DEBUG   SystemMonitor:30379 [system_monitor.py:_start():172] Publishing last batch of metrics
+2023-03-09 17:34:02,486 INFO    HandlerThread:30379 [interfaces.py:finish():199] Joined cpu monitor
+2023-03-09 17:34:02,486 INFO    HandlerThread:30379 [interfaces.py:finish():199] Joined disk monitor
+2023-03-09 17:34:02,504 INFO    HandlerThread:30379 [interfaces.py:finish():199] Joined gpu monitor
+2023-03-09 17:34:02,504 INFO    HandlerThread:30379 [interfaces.py:finish():199] Joined memory monitor
+2023-03-09 17:34:02,504 INFO    HandlerThread:30379 [interfaces.py:finish():199] Joined network monitor
+2023-03-09 17:34:02,504 DEBUG   SenderThread:30379 [sender.py:send():336] send: stats
+2023-03-09 17:34:02,952 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:34:03,505 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:34:03,683 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:34:07,953 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:34:08,506 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:34:12,954 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:34:13,507 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:34:17,955 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:34:18,508 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:34:22,956 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:34:23,509 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:34:27,957 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:34:28,510 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:34:32,958 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:34:33,511 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:34:37,959 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:34:38,512 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:34:42,960 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:34:43,513 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:34:47,961 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:34:48,514 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:34:52,963 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:34:53,515 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:34:57,964 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:34:58,516 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:35:02,965 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:35:03,517 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:35:07,966 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:35:08,518 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:35:12,967 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:35:13,519 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:35:17,968 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:35:18,520 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:35:22,969 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:35:23,521 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:35:27,970 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:35:28,522 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:35:32,971 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:35:33,523 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:35:37,972 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:35:38,524 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:35:42,973 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:35:43,525 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:35:47,974 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:35:48,526 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:35:52,975 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:35:53,527 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:35:57,976 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:35:58,528 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:36:02,977 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:36:03,529 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:36:07,979 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:36:08,530 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:36:12,980 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:36:13,531 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:36:17,981 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:36:18,532 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:36:22,982 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:36:23,533 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:36:27,983 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:36:28,534 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:36:32,984 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:36:33,535 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:36:37,985 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:36:38,536 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:36:42,986 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:36:43,537 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:36:47,987 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:36:48,538 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:36:52,988 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:36:53,539 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:36:57,989 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:36:58,541 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:37:02,990 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:37:03,542 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:37:07,991 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:37:08,543 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:37:12,992 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:37:13,544 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:37:17,994 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:37:18,545 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:37:22,995 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:37:23,546 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:37:27,996 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:37:28,547 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:37:32,997 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:37:33,548 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:37:37,998 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:37:38,549 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:37:42,999 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:37:43,550 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:37:48,000 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:37:48,551 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:37:53,001 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:37:53,552 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:37:58,002 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:37:58,553 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:38:03,003 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:38:03,554 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:38:08,004 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:38:08,555 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:38:13,005 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:38:13,556 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:38:18,006 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:38:18,557 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:38:23,007 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:38:23,558 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:38:28,009 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:38:28,559 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:38:33,010 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:38:33,560 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:38:38,011 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:38:38,561 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:38:43,012 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:38:43,562 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:38:48,013 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:38:48,563 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:38:53,014 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:38:53,564 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:38:58,015 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:38:58,565 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:39:03,016 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:39:03,567 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:39:08,017 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:39:08,568 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:39:13,018 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:39:13,569 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:39:18,019 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:39:18,570 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:39:23,020 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:39:23,571 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:39:28,021 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:39:28,572 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:39:33,022 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:39:33,573 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:39:38,024 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:39:38,574 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:39:43,025 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:39:43,575 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:39:48,026 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:39:48,576 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:39:53,027 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:39:53,577 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:39:58,028 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:39:58,578 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:40:03,029 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:40:03,579 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:40:08,030 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:40:08,580 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:40:13,031 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:40:13,581 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:40:18,032 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:40:18,582 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:40:23,033 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:40:23,583 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:40:28,033 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:40:28,584 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:40:33,034 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:40:33,585 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:40:38,035 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:40:38,586 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:40:43,036 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:40:43,587 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:40:48,037 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:40:48,588 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:40:53,039 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:40:53,589 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:40:58,040 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:40:58,590 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:41:03,041 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:41:03,591 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:41:08,042 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:41:08,593 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:41:13,043 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:41:13,594 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:41:18,044 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:41:18,595 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:41:23,045 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:41:23,596 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:41:28,046 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:41:28,597 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:41:33,047 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:41:33,598 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:41:38,048 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:41:38,599 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:41:43,049 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:41:43,600 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:41:48,050 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:41:48,601 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:41:53,052 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:41:53,602 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:41:58,053 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:41:58,603 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:42:03,054 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:42:03,605 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:42:08,055 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:42:08,606 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:42:13,056 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:42:13,607 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:42:18,057 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:42:18,608 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:42:23,058 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:42:23,609 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:42:28,059 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:42:28,610 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:42:33,060 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:42:33,611 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:42:38,061 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:42:38,612 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:42:43,062 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:42:43,613 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:42:48,063 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-09 17:42:48,614 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:42:51,669 DEBUG   SenderThread:30379 [sender.py:send():336] send: exit
+2023-03-09 17:42:51,670 INFO    SenderThread:30379 [sender.py:send_exit():559] handling exit code: 0
+2023-03-09 17:42:51,670 INFO    SenderThread:30379 [sender.py:send_exit():561] handling runtime: 603
+2023-03-09 17:42:51,671 INFO    SenderThread:30379 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-09 17:42:51,671 INFO    SenderThread:30379 [sender.py:send_exit():567] send defer
+2023-03-09 17:42:51,671 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: defer
+2023-03-09 17:42:51,671 INFO    HandlerThread:30379 [handler.py:handle_request_defer():170] handle defer: 0
+2023-03-09 17:42:51,671 DEBUG   SenderThread:30379 [sender.py:send_request():363] send_request: defer
+2023-03-09 17:42:51,671 INFO    SenderThread:30379 [sender.py:send_request_defer():583] handle sender defer: 0
+2023-03-09 17:42:51,671 INFO    SenderThread:30379 [sender.py:transition_state():587] send defer: 1
+2023-03-09 17:42:51,671 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: defer
+2023-03-09 17:42:51,671 INFO    HandlerThread:30379 [handler.py:handle_request_defer():170] handle defer: 1
+2023-03-09 17:42:51,671 DEBUG   SenderThread:30379 [sender.py:send_request():363] send_request: defer
+2023-03-09 17:42:51,671 INFO    SenderThread:30379 [sender.py:send_request_defer():583] handle sender defer: 1
+2023-03-09 17:42:51,671 INFO    SenderThread:30379 [sender.py:transition_state():587] send defer: 2
+2023-03-09 17:42:51,672 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: defer
+2023-03-09 17:42:51,672 INFO    HandlerThread:30379 [handler.py:handle_request_defer():170] handle defer: 2
+2023-03-09 17:42:51,672 DEBUG   SenderThread:30379 [sender.py:send_request():363] send_request: defer
+2023-03-09 17:42:51,672 INFO    SenderThread:30379 [sender.py:send_request_defer():583] handle sender defer: 2
+2023-03-09 17:42:51,672 INFO    SenderThread:30379 [sender.py:transition_state():587] send defer: 3
+2023-03-09 17:42:51,672 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: defer
+2023-03-09 17:42:51,672 INFO    HandlerThread:30379 [handler.py:handle_request_defer():170] handle defer: 3
+2023-03-09 17:42:51,672 DEBUG   SenderThread:30379 [sender.py:send_request():363] send_request: defer
+2023-03-09 17:42:51,672 INFO    SenderThread:30379 [sender.py:send_request_defer():583] handle sender defer: 3
+2023-03-09 17:42:51,672 INFO    SenderThread:30379 [sender.py:transition_state():587] send defer: 4
+2023-03-09 17:42:51,672 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: defer
+2023-03-09 17:42:51,672 INFO    HandlerThread:30379 [handler.py:handle_request_defer():170] handle defer: 4
+2023-03-09 17:42:51,672 DEBUG   SenderThread:30379 [sender.py:send_request():363] send_request: defer
+2023-03-09 17:42:51,672 INFO    SenderThread:30379 [sender.py:send_request_defer():583] handle sender defer: 4
+2023-03-09 17:42:51,672 INFO    SenderThread:30379 [sender.py:transition_state():587] send defer: 5
+2023-03-09 17:42:51,672 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: defer
+2023-03-09 17:42:51,672 INFO    HandlerThread:30379 [handler.py:handle_request_defer():170] handle defer: 5
+2023-03-09 17:42:51,673 DEBUG   SenderThread:30379 [sender.py:send():336] send: summary
+2023-03-09 17:42:51,673 INFO    SenderThread:30379 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-09 17:42:51,673 DEBUG   SenderThread:30379 [sender.py:send_request():363] send_request: defer
+2023-03-09 17:42:51,673 INFO    SenderThread:30379 [sender.py:send_request_defer():583] handle sender defer: 5
+2023-03-09 17:42:51,673 INFO    SenderThread:30379 [sender.py:transition_state():587] send defer: 6
+2023-03-09 17:42:51,673 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: defer
+2023-03-09 17:42:51,673 INFO    HandlerThread:30379 [handler.py:handle_request_defer():170] handle defer: 6
+2023-03-09 17:42:51,673 DEBUG   SenderThread:30379 [sender.py:send_request():363] send_request: defer
+2023-03-09 17:42:51,673 INFO    SenderThread:30379 [sender.py:send_request_defer():583] handle sender defer: 6
+2023-03-09 17:42:51,673 INFO    SenderThread:30379 [sender.py:transition_state():587] send defer: 7
+2023-03-09 17:42:51,673 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:42:51,673 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: defer
+2023-03-09 17:42:51,673 INFO    HandlerThread:30379 [handler.py:handle_request_defer():170] handle defer: 7
+2023-03-09 17:42:51,674 DEBUG   SenderThread:30379 [sender.py:send_request():363] send_request: defer
+2023-03-09 17:42:51,674 INFO    SenderThread:30379 [sender.py:send_request_defer():583] handle sender defer: 7
+2023-03-09 17:42:51,937 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/wandb-summary.json
+2023-03-09 17:42:52,670 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: poll_exit
+2023-03-09 17:42:53,480 INFO    SenderThread:30379 [sender.py:transition_state():587] send defer: 8
+2023-03-09 17:42:53,480 DEBUG   SenderThread:30379 [sender.py:send_request():363] send_request: poll_exit
+2023-03-09 17:42:53,481 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: defer
+2023-03-09 17:42:53,481 INFO    HandlerThread:30379 [handler.py:handle_request_defer():170] handle defer: 8
+2023-03-09 17:42:53,482 DEBUG   SenderThread:30379 [sender.py:send_request():363] send_request: defer
+2023-03-09 17:42:53,482 INFO    SenderThread:30379 [sender.py:send_request_defer():583] handle sender defer: 8
+2023-03-09 17:42:53,482 INFO    SenderThread:30379 [sender.py:transition_state():587] send defer: 9
+2023-03-09 17:42:53,483 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: defer
+2023-03-09 17:42:53,483 INFO    HandlerThread:30379 [handler.py:handle_request_defer():170] handle defer: 9
+2023-03-09 17:42:53,484 DEBUG   SenderThread:30379 [sender.py:send_request():363] send_request: defer
+2023-03-09 17:42:53,484 INFO    SenderThread:30379 [sender.py:send_request_defer():583] handle sender defer: 9
+2023-03-09 17:42:53,484 INFO    SenderThread:30379 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-03-09 17:42:53,670 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: poll_exit
+2023-03-09 17:42:53,938 INFO    Thread-13 :30379 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:42:53,939 INFO    SenderThread:30379 [dir_watcher.py:finish():395] scan: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files
+2023-03-09 17:42:53,939 INFO    SenderThread:30379 [dir_watcher.py:finish():409] scan save: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/requirements.txt requirements.txt
+2023-03-09 17:42:53,940 INFO    SenderThread:30379 [dir_watcher.py:finish():409] scan save: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/wandb-summary.json wandb-summary.json
+2023-03-09 17:42:53,945 INFO    SenderThread:30379 [dir_watcher.py:finish():409] scan save: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/conda-environment.yaml conda-environment.yaml
+2023-03-09 17:42:53,945 INFO    SenderThread:30379 [dir_watcher.py:finish():409] scan save: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log output.log
+2023-03-09 17:42:53,945 INFO    SenderThread:30379 [dir_watcher.py:finish():409] scan save: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/config.yaml config.yaml
+2023-03-09 17:42:53,946 INFO    SenderThread:30379 [dir_watcher.py:finish():409] scan save: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/wandb-metadata.json wandb-metadata.json
+2023-03-09 17:42:53,946 INFO    SenderThread:30379 [sender.py:transition_state():587] send defer: 10
+2023-03-09 17:42:53,946 DEBUG   SenderThread:30379 [sender.py:send_request():363] send_request: poll_exit
+2023-03-09 17:42:53,946 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: defer
+2023-03-09 17:42:53,946 INFO    HandlerThread:30379 [handler.py:handle_request_defer():170] handle defer: 10
+2023-03-09 17:42:53,947 DEBUG   SenderThread:30379 [sender.py:send_request():363] send_request: defer
+2023-03-09 17:42:53,951 INFO    SenderThread:30379 [sender.py:send_request_defer():583] handle sender defer: 10
+2023-03-09 17:42:53,951 INFO    SenderThread:30379 [file_pusher.py:finish():164] shutting down file pusher
+2023-03-09 17:42:54,672 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: poll_exit
+2023-03-09 17:42:54,672 DEBUG   SenderThread:30379 [sender.py:send_request():363] send_request: poll_exit
+2023-03-09 17:42:54,824 INFO    wandb-upload_4:30379 [upload_job.py:push():138] Uploaded file /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/config.yaml
+2023-03-09 17:42:54,868 INFO    wandb-upload_0:30379 [upload_job.py:push():138] Uploaded file /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/requirements.txt
+2023-03-09 17:42:55,315 INFO    wandb-upload_3:30379 [upload_job.py:push():138] Uploaded file /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/output.log
+2023-03-09 17:42:55,412 ERROR   wandb-upload_2:30379 [internal_api.py:upload_file():1997] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/gechengze/Word2Vec/npoy65ad/conda-environment.yaml?Expires=1678441374&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=LG%2FiX6EbygxvMmfKWgBs307QyOjKSKFo%2FcIPImlDXNPzijd7uCfMSGeFyU%2BSqNUzeRy8Nvzyo83kH8pfVaHnJba%2FkryeKNl4h%2F1aFbK2Mi195vUPkG0GQm3fJBi2sJ7EMb7ti%2B381dJBAtdNrUnaDFKK9%2BdpXc96UC2WsbLCVg3C6fxywoasVkCAtsnmN0xeXzrYSpqRaDmOR34DcD6L2KH09xk3EriSfYwRJ5ltsuGqwcvYmMPBBOoN19VSs5ko95AWXB4mL3AM6hzhGCO9IKKO%2BxmT8DinReXIEODdxoST%2FqQf9Goz6HGYXb3iD0g7fvPLeLb%2F2Tfn1pa4bfyGBw%3D%3D: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-production.appspot.com/gechengze/Word2Vec/npoy65ad/conda-environment.yaml?Expires=1678441374&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=LG%2FiX6EbygxvMmfKWgBs307QyOjKSKFo%2FcIPImlDXNPzijd7uCfMSGeFyU%2BSqNUzeRy8Nvzyo83kH8pfVaHnJba%2FkryeKNl4h%2F1aFbK2Mi195vUPkG0GQm3fJBi2sJ7EMb7ti%2B381dJBAtdNrUnaDFKK9%2BdpXc96UC2WsbLCVg3C6fxywoasVkCAtsnmN0xeXzrYSpqRaDmOR34DcD6L2KH09xk3EriSfYwRJ5ltsuGqwcvYmMPBBOoN19VSs5ko95AWXB4mL3AM6hzhGCO9IKKO%2BxmT8DinReXIEODdxoST%2FqQf9Goz6HGYXb3iD0g7fvPLeLb%2F2Tfn1pa4bfyGBw%3D%3D (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))
+2023-03-09 17:42:55,412 ERROR   wandb-upload_2:30379 [internal_api.py:upload_file():1999] upload_file request headers: {'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '17014'}
+2023-03-09 17:42:55,412 ERROR   wandb-upload_2:30379 [internal_api.py:upload_file():2001] upload_file response body: 
+2023-03-09 17:42:55,413 ERROR   wandb-upload_1:30379 [internal_api.py:upload_file():1997] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/gechengze/Word2Vec/npoy65ad/wandb-summary.json?Expires=1678441374&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=GAE7iqT7oHIQQ1YZ4eBL73SGsXUY%2BDOaPUx0SyaOEsIujgwqRHDWkluHusG8ZO0T%2FNDcoOiLo0QAMZb0At473B4SbHbi%2B316y7kGw7SBPZ4IJOiZfpA%2FD6vWJx4rerRKW219gJqisPdg18z1lkrG6WD6qQ4yG0%2FTkw8iodwXV9L4RitY5oGywJW5k2X6S1e0i1%2Fyt18UbfxsqhDqFJbtnKI6%2FJp1Yxa9ceYmrPI7Ju675wyMFSpv%2BjJaHSJBXC80vCBl1NPnjdi49mKHg%2BJ2a5OgAmjVEPdozSuDWaFzgK213fsDgcK2V8W6K5nIN36cYgX1sMTPVFKkwAP1l30DoQ%3D%3D: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-production.appspot.com/gechengze/Word2Vec/npoy65ad/wandb-summary.json?Expires=1678441374&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=GAE7iqT7oHIQQ1YZ4eBL73SGsXUY%2BDOaPUx0SyaOEsIujgwqRHDWkluHusG8ZO0T%2FNDcoOiLo0QAMZb0At473B4SbHbi%2B316y7kGw7SBPZ4IJOiZfpA%2FD6vWJx4rerRKW219gJqisPdg18z1lkrG6WD6qQ4yG0%2FTkw8iodwXV9L4RitY5oGywJW5k2X6S1e0i1%2Fyt18UbfxsqhDqFJbtnKI6%2FJp1Yxa9ceYmrPI7Ju675wyMFSpv%2BjJaHSJBXC80vCBl1NPnjdi49mKHg%2BJ2a5OgAmjVEPdozSuDWaFzgK213fsDgcK2V8W6K5nIN36cYgX1sMTPVFKkwAP1l30DoQ%3D%3D (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))
+2023-03-09 17:42:55,413 ERROR   wandb-upload_1:30379 [internal_api.py:upload_file():1999] upload_file request headers: {'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '177'}
+2023-03-09 17:42:55,414 ERROR   wandb-upload_1:30379 [internal_api.py:upload_file():2001] upload_file response body: 
+2023-03-09 17:42:57,150 INFO    wandb-upload_1:30379 [upload_job.py:push():138] Uploaded file /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/wandb-summary.json
+2023-03-09 17:42:57,230 INFO    wandb-upload_2:30379 [upload_job.py:push():138] Uploaded file /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/files/conda-environment.yaml
+2023-03-09 17:42:57,431 INFO    Thread-12 :30379 [sender.py:transition_state():587] send defer: 11
+2023-03-09 17:42:57,431 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: defer
+2023-03-09 17:42:57,432 INFO    HandlerThread:30379 [handler.py:handle_request_defer():170] handle defer: 11
+2023-03-09 17:42:57,432 DEBUG   SenderThread:30379 [sender.py:send_request():363] send_request: defer
+2023-03-09 17:42:57,433 INFO    SenderThread:30379 [sender.py:send_request_defer():583] handle sender defer: 11
+2023-03-09 17:42:57,433 INFO    SenderThread:30379 [file_pusher.py:join():169] waiting for file pusher
+2023-03-09 17:42:57,433 INFO    SenderThread:30379 [sender.py:transition_state():587] send defer: 12
+2023-03-09 17:42:57,433 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: defer
+2023-03-09 17:42:57,433 INFO    HandlerThread:30379 [handler.py:handle_request_defer():170] handle defer: 12
+2023-03-09 17:42:57,434 DEBUG   SenderThread:30379 [sender.py:send_request():363] send_request: defer
+2023-03-09 17:42:57,434 INFO    SenderThread:30379 [sender.py:send_request_defer():583] handle sender defer: 12
+2023-03-09 17:42:59,563 INFO    SenderThread:30379 [sender.py:transition_state():587] send defer: 13
+2023-03-09 17:42:59,563 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: defer
+2023-03-09 17:42:59,564 INFO    HandlerThread:30379 [handler.py:handle_request_defer():170] handle defer: 13
+2023-03-09 17:42:59,564 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: status_report
+2023-03-09 17:42:59,565 DEBUG   SenderThread:30379 [sender.py:send_request():363] send_request: defer
+2023-03-09 17:42:59,565 INFO    SenderThread:30379 [sender.py:send_request_defer():583] handle sender defer: 13
+2023-03-09 17:42:59,565 INFO    SenderThread:30379 [sender.py:transition_state():587] send defer: 14
+2023-03-09 17:42:59,566 DEBUG   HandlerThread:30379 [handler.py:handle_request():144] handle_request: defer
+2023-03-09 17:42:59,566 INFO    HandlerThread:30379 [handler.py:handle_request_defer():170] handle defer: 14
+2023-03-09 17:42:59,567 DEBUG   SenderThread:30379 [sender.py:send():336] send: final
+2023-03-09 17:42:59,567 DEBUG   SenderThread:30379 [sender.py:send():336] send: footer
+2023-03-09 17:42:59,567 DEBUG   SenderThread:30379 [sender.py:send_request():363] send_request: defer
+2023-03-09 17:42:59,568 INFO    SenderThread:30379 [sender.py:send_request_defer():583] handle sender defer: 14
+2023-03-09 17:43:00,300 WARNING StreamThr :30379 [internal.py:is_dead():415] Internal process exiting, parent pid 30288 disappeared
+2023-03-09 17:43:00,301 ERROR   StreamThr :30379 [internal.py:wandb_internal():153] Internal process shutdown.
+2023-03-09 17:43:00,566 INFO    HandlerThread:30379 [handler.py:finish():842] shutting down handler
+2023-03-09 17:43:00,567 INFO    WriterThread:30379 [datastore.py:close():298] close: /home/gechengze/project/nlp-notebook/models/wandb/run-20230309_172357-npoy65ad/run-npoy65ad.wandb
+2023-03-09 17:43:00,568 INFO    SenderThread:30379 [sender.py:finish():1504] shutting down sender
+2023-03-09 17:43:00,568 INFO    SenderThread:30379 [file_pusher.py:finish():164] shutting down file pusher
+2023-03-09 17:43:00,568 INFO    SenderThread:30379 [file_pusher.py:join():169] waiting for file pusher

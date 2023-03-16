@@ -1,0 +1,104 @@
+{
+    "os": "Linux-5.15.0-60-generic-x86_64-with-glibc2.31",
+    "python": "3.9.13",
+    "heartbeatAt": "2023-03-10T05:57:31.722743",
+    "startedAt": "2023-03-10T05:57:29.419301",
+    "docker": null,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/gechengze/nlp-notebook.git",
+        "commit": "78112b7f1aa5793a6b76ed69e5f423a61e36c5ab"
+    },
+    "email": null,
+    "root": "/home/gechengze/project/nlp-notebook",
+    "host": "ubuntu-3080",
+    "username": "gechengze",
+    "executable": "/home/gechengze/anaconda3/bin/python",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 4.115583333333334,
+        "min": 800.0,
+        "max": 4800.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 4.1,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4.1,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4.287,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4.1,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4.1,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4.1,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4.1,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4.1,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4.1,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4.1,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4.1,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4.1,
+            "min": 800.0,
+            "max": 4800.0
+        }
+    ],
+    "disk": {
+        "total": 1043.379623413086,
+        "used": 32.461463928222656
+    },
+    "gpu": "NVIDIA GeForce RTX 3080",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3080",
+            "memory_total": 10481106944
+        }
+    ],
+    "memory": {
+        "total": 15.54610824584961
+    }
+}
